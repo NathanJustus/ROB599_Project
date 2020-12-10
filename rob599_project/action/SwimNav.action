@@ -1,0 +1,10 @@
+# goal
+int64 x_goal
+int64 y_goal
+int64 w_goal
+---
+# result
+bool success
+---
+# feedback
+string location

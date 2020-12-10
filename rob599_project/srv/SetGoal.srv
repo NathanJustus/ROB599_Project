@@ -1,0 +1,8 @@
+# inputs
+int64 x_goal
+int64 y_goal
+int64 w_goal
+int64 do_goal
+---
+# outputs
+bool success

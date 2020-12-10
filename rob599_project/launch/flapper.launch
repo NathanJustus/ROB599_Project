@@ -1,0 +1,12 @@
+<launch>
+
+	<!-- Launch node to animate flapper -->
+	<node name="flapper_visualizer" pkg="rob599_project" type="flapper_viz.py" />
+
+	<!-- Launch node to evaluate flapper connection. -->
+	<node name="connection_evaluator" pkg="rob599_project" type="connection.py" />
+
+	<!-- Launch node to do control on flapper joints -->
+	<node name="controller" pkg="rob599_project" type="controller.py" />
+
+</launch>
