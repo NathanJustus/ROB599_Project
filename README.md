@@ -11,4 +11,6 @@ Launch the three main nodes using
 You can use the service to set goal locations by 
 `rosservice call /set_swim_goal <x_goal> <y_goal> <angle_goal> <do_goal_boolean>`
 
-`x_goal`, `y_goal`, and `angle_goal` are all floats that set the goal pose of the robot.  I never actually implemented control for the angle_goal, so it's kind of useless right now.  The `do_goal_boolean` should be either 0 or 1, 0 clears old goals and makes the robot move forward indefinitely, and 1 tells the controller to actually try to navigate to this goal.
+`<x_goal>`, `<y_goal>`, and `<angle_goal>` are all positive floats that set the goal pose of the robot with `0 <= x/y_goal <= 6` and `0 <= angle_goal <= 2*pi`.  I never actually implemented control for the angle_goal, so all it does is change the goal in the animation.  The `<do_goal_boolean>` should be either 0 or 1, 0 clears old goals and makes the robot move forward indefinitely, and 1 tells the controller to actually try to navigate to this goal.
+
+Implemented in ROS Melodic
